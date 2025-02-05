@@ -9,9 +9,6 @@ export default function Home() {
             <img src={Logo} />
         </header>
         <main>
-            <p>
-                TEBRİKLER!<br/>SİPARİŞİNİZ ALINDI!
-            </p>
         </main>
     </div>;
 }
