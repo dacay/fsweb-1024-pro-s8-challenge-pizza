@@ -1,0 +1,39 @@
+.home {
+    background-color: #CE2829;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home header {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.home header img {
+    height: 40px;
+}
+
+.home main {
+    height: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home main p {
+    margin: 0;
+    color: white;
+    font-size: 2.7rem;
+    font-family: "Barlow", serif;
+    font-weight: 200;
+    letter-spacing: -0.2rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
