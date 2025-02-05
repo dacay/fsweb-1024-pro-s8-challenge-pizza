@@ -5,7 +5,7 @@
 }
 
 .status header {
-    height: 20%;
+    height: 16%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,7 +15,7 @@
 }
 
 .status header img {
-    height: 40px;
+    height: 30px;
 }
 
 .status main {
@@ -34,6 +34,6 @@
     font-family: "Roboto Condensed", serif;
     font-weight: 300;
     line-height: 2.7rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
