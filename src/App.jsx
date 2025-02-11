@@ -9,18 +9,25 @@ import './App.css'
 
 function App() {
 
+  const [orders, setOrders] = useState([]);
+
+  const handleOrder = (newOrder) => {
+
+    setOrders([...orders, newOrder]);
+  }
+
   return (
     <>
       <Router>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home orderCount={orders.length} />
           </Route>
           <Route path="/order">
-            <OrderForm />
+            <OrderForm onOrder={handleOrder} />
           </Route>
           <Route path="/status">
-            <OrderStatus />
+            <OrderStatus order={orders[orders.length - 1]} />
           </Route>
         </Switch>
       </Router>

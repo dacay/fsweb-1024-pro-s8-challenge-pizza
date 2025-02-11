@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
 
+import Header from "../components/Header";
+
 import "./Home.css";
 
-import Logo from "../assets/logo.svg";
-
-export default function Home() {
+export default function Home({ orderCount }) {
 
     return <div className="home">
-        <header>
-            <img src={Logo} />
-        </header>
+        <Header />
         <main>
             <p>
                 KOD ACIKTIRIR<br/>
                 PİZZA, DOYURUR
             </p>
             <Link className="button" to="/order">ACIKTIM</Link>
+            {orderCount > 0 && <p style={{ fontSize: "1.2rem" }}>
+                Aktif Sipariş Sayısı: {orderCount}
+            </p>}
         </main>
     </div>;
 }

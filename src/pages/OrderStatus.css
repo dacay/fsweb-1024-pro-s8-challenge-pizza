@@ -1,21 +1,8 @@
 .status {
     background-color: #CE2829;
     width: 100vw;
-    height: 100vh;
-}
-
-.status header {
-    height: 16%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: end;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.status header img {
-    height: 30px;
+    min-height: 100vh;
+    padding-bottom: 2rem;
 }
 
 .status main {
@@ -29,11 +16,68 @@
 
 .status main p {
     margin: 0;
+    padding: 2rem;
     color: white;
     font-size: 2.7rem;
     font-family: "Roboto Condensed", serif;
     font-weight: 300;
     line-height: 2.7rem;
-    margin-bottom: 5rem;
     text-align: center;
+}
+
+.status main h1 {
+    width: 100%;
+}
+
+.status main hr {
+    width: 100%;
+    height: 2px;
+    color: white;
+}
+
+.status main .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status main .details p {
+    width: 50%;
+    text-align: left;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.status main .details h1 {
+    font-size: 1.2rem;
+}
+
+.status main p.total {
+    width: 60%;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+
+.status main p.total h2 {
+    font-size: 1.2rem;
+}
+
+.status main p.total p {
+    font-size: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.status .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
